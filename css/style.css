@@ -1,0 +1,40 @@
+:root {
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Evita que os elementos saiam de dentro das bordas definidas*/
+}
+
+body {
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    display: flex; /*Coloca todos os elementos um ao lado do outro, possibilitando o uso so flexbox*/
+    flex-direction: row; /*Row é na verdade o padrão do display flex, não tem necessidade de ser declarada*/
+    align-items: center; /*Alinha os items ao centro, no sentido vertical*/
+    justify-content: space-between; /*Alinha os items no sentido horizontal*/
+}
+
+.logo {
+    color: var(--vermelho);
+    font-family: nf Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 50px;
+}
+
+nav a:hover{
+    color: #fff;
+}
+
