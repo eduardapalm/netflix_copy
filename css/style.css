@@ -17,11 +17,19 @@ body {
     color: white;
 }
 
+.top_wrapper {
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/fundo.jpg');
+    background-size: cover;
+}
+
+
 header .container {
     display: flex; /*Coloca todos os elementos um ao lado do outro, possibilitando o uso so flexbox*/
     flex-direction: row; /*Row é na verdade o padrão do display flex, não tem necessidade de ser declarada*/
     align-items: center; /*Alinha os items ao centro, no sentido vertical*/
     justify-content: space-between; /*Alinha os items no sentido horizontal*/
+    background: linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)100%);
+    margin: 0;
 }
 
 header .logo {
@@ -33,7 +41,7 @@ header .logo {
 
 header nav a {
     text-decoration: none;
-    color: #aaa;
+    color: rgb(216, 216, 216);
     margin-right: 50px;
 }
 
@@ -44,7 +52,7 @@ header nav a:hover{
 /*Filme Principal*/
 .filme_principal {
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/fundo.jpg');
+
    
     height: 400px;
     background-size: cover;
@@ -55,9 +63,6 @@ header nav a:hover{
     align-items: flex-start;
 }
 
-main .container {
-    margin-left: 10px;
-}
 
 .filme_principal .titulo {
     font-size: 40px;
@@ -85,11 +90,28 @@ main .container {
     transition: .4s;
 }
 
-.botao:hover{
+.botao:hover{ /*A função hover te possibilita controlar a interação ao passar o mouse*/
     background-color: white;
     color: black;
 }
 
 .botao i {
     margin-right: 7px;
+}
+
+.container {
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.filme_principal .container {
+    width: 70%;
+}
+
+/*Container é a mesma coisa do Wrapper utilizado na última aula*/
+
+.box_film {
+    height: 100%;
+    width: 100%;
+    display: block;
 }
