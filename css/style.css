@@ -1,6 +1,6 @@
 :root {
     --vermelho: #e50914;
-    --preto: #141414;
+    --preto: rgba(0, 0, 0, 0.986);
 }
 
 * {
@@ -18,7 +18,7 @@ body {
 }
 
 .top_wrapper {
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/fundo.jpg');
+    background: linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.9)100%), url('../img/fundo.jpg');
     background-size: cover;
 }
 
@@ -28,15 +28,22 @@ header .container {
     flex-direction: row; /*Row é na verdade o padrão do display flex, não tem necessidade de ser declarada*/
     align-items: center; /*Alinha os items ao centro, no sentido vertical*/
     justify-content: space-between; /*Alinha os items no sentido horizontal*/
-    background: linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.00)100%);
+    background: linear-gradient(rgb(0, 0, 0),rgba(0, 0, 0, 0.671)100%);
+    min-height: 100%;
     margin: 0;
+    
+
+}
+
+header .logo .menu {
+    margin-top: 2%;
 }
 
 header .logo {
     color: var(--vermelho);
     font-family: nf Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 40px;
-    margin-left: 10px;
+    font-size: 50px;
+    margin-left: 3%;
 }
 
 header nav a {
@@ -61,6 +68,10 @@ header nav a:hover{
     flex-direction: column;
     justify-content: center; /*O Justify-Content sempre acompanha a definição do Flex-Direction*/
     align-items: flex-start;
+
+    margin-left: 1%;
+
+    
 }
 
 
@@ -74,10 +85,12 @@ header nav a:hover{
 .filme_principal .descricao {
     margin-top: 10px;
     margin-bottom: 40px;
+    max-width: 70%;
+    text-align: justify;
 }
 
 .botao {
-    background-color: rgba(0,0,0,.50);
+    background-color: rgba(0,0,0,.70);
     border: none;
     border-radius: 3px;
     color: white;
@@ -108,10 +121,45 @@ header nav a:hover{
     width: 70%;
 }
 
+.title {
+    margin-top: 5%;
+    margin-bottom: 1%;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 130%;
+    margin-left: 3%;
+    color: rgb(240, 238, 238);
+}
+
+.title2 {
+    margin-top:0;
+    margin-bottom: 1%;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 130%;
+    margin-left: 3%;
+    color: rgb(240, 238, 238);
+}
+
+
 /*Container é a mesma coisa do Wrapper utilizado na última aula*/
 
-.box_film {
-    height: 100%;
-    width: 100%;
+.item {
+    height: 90%;
+    width: 99%;
     display: block;
+}
+
+.carrosel_imgs {
+    background: linear-gradient(rgba(0, 0, 0, 0.096),rgba(0, 0, 0, 0.938)100%);
+}
+
+span {
+    color: rgb(250, 0, 0);
+}
+
+#owl {
+    margin-left: 3%;
+    margin-right: 5%;
+    width: 94.5%;
 }
