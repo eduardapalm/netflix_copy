@@ -16,3 +16,4 @@
 - Melhora na responsividade, adaptando aos principais dispositivos.
 
 ## Imagem do projeto:
+![](https://i.imgur.com/ihvgt4n.png)
